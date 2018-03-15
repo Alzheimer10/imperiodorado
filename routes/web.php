@@ -11,6 +11,7 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'imperiodoradoController@home')->name('/');
+Route::get('/contacto', 'imperiodoradoController@contacto')->name('contacto');
+Route::get('/noticias', 'imperiodoradoController@noticias')->name('noticias');
+Route::get('/empresa', 'imperiodoradoController@empresa')->name('empresa');
